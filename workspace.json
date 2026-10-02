@@ -3,7 +3,7 @@
   "version": 2,
   "sensitive": true,
   "notice": "This file contains secrets (variable values, tokens, passwords, API keys) in plain text. Keep it private.",
-  "exportedAt": "2026-10-02T06:00:33.000000Z",
+  "exportedAt": "2026-10-02T06:22:50.513339Z",
   "collections": [
     {
       "name": "FlowPros Mobile API",
@@ -16,7 +16,33 @@
         "type": "apiKey",
         "apiKeyName": "access-token",
         "apiKeyValue": "{{accessToken}}",
-        "apiKeyLocation": "header"
+        "apiKeyLocation": "header",
+        "bearerToken": "",
+        "basicUsername": "",
+        "basicPassword": "",
+        "awsAccessKey": "",
+        "awsSecretKey": "",
+        "awsRegion": "us-east-1",
+        "awsService": "execute-api",
+        "awsSessionToken": "",
+        "jwtSecret": "",
+        "jwtAlgorithm": "hs256",
+        "jwtPayload": "{}",
+        "jwtHeaderPrefix": "Bearer",
+        "oauth2GrantType": "clientCredentials",
+        "oauth2AccessTokenUrl": "",
+        "oauth2AuthorizationUrl": "",
+        "oauth2RedirectUri": "",
+        "oauth2ClientId": "",
+        "oauth2ClientSecret": "",
+        "oauth2ClientAuthentication": "basicHeader",
+        "oauth2Scope": "",
+        "oauth2Username": "",
+        "oauth2Password": "",
+        "oauth2Audience": "",
+        "oauth2AccessToken": "",
+        "oauth2RefreshToken": "",
+        "oauth2TokenExpiry": null
       },
       "variables": [],
       "folders": [
@@ -106,7 +132,36 @@
             "graphqlVariables": "{}"
           },
           "auth": {
-            "type": "none"
+            "type": "none",
+            "apiKeyName": "",
+            "apiKeyValue": "",
+            "apiKeyLocation": "header",
+            "bearerToken": "",
+            "basicUsername": "",
+            "basicPassword": "",
+            "awsAccessKey": "",
+            "awsSecretKey": "",
+            "awsRegion": "us-east-1",
+            "awsService": "execute-api",
+            "awsSessionToken": "",
+            "jwtSecret": "",
+            "jwtAlgorithm": "hs256",
+            "jwtPayload": "{}",
+            "jwtHeaderPrefix": "Bearer",
+            "oauth2GrantType": "clientCredentials",
+            "oauth2AccessTokenUrl": "",
+            "oauth2AuthorizationUrl": "",
+            "oauth2RedirectUri": "",
+            "oauth2ClientId": "",
+            "oauth2ClientSecret": "",
+            "oauth2ClientAuthentication": "basicHeader",
+            "oauth2Scope": "",
+            "oauth2Username": "",
+            "oauth2Password": "",
+            "oauth2Audience": "",
+            "oauth2AccessToken": "",
+            "oauth2RefreshToken": "",
+            "oauth2TokenExpiry": null
           },
           "scripts": {
             "assertions": [
@@ -181,7 +236,36 @@
             "graphqlVariables": "{}"
           },
           "auth": {
-            "type": "none"
+            "type": "none",
+            "apiKeyName": "",
+            "apiKeyValue": "",
+            "apiKeyLocation": "header",
+            "bearerToken": "",
+            "basicUsername": "",
+            "basicPassword": "",
+            "awsAccessKey": "",
+            "awsSecretKey": "",
+            "awsRegion": "us-east-1",
+            "awsService": "execute-api",
+            "awsSessionToken": "",
+            "jwtSecret": "",
+            "jwtAlgorithm": "hs256",
+            "jwtPayload": "{}",
+            "jwtHeaderPrefix": "Bearer",
+            "oauth2GrantType": "clientCredentials",
+            "oauth2AccessTokenUrl": "",
+            "oauth2AuthorizationUrl": "",
+            "oauth2RedirectUri": "",
+            "oauth2ClientId": "",
+            "oauth2ClientSecret": "",
+            "oauth2ClientAuthentication": "basicHeader",
+            "oauth2Scope": "",
+            "oauth2Username": "",
+            "oauth2Password": "",
+            "oauth2Audience": "",
+            "oauth2AccessToken": "",
+            "oauth2RefreshToken": "",
+            "oauth2TokenExpiry": null
           },
           "scripts": {
             "assertions": [
@@ -234,7 +318,36 @@
             "graphqlVariables": "{}"
           },
           "auth": {
-            "type": "inherit"
+            "type": "inherit",
+            "apiKeyName": "",
+            "apiKeyValue": "",
+            "apiKeyLocation": "header",
+            "bearerToken": "",
+            "basicUsername": "",
+            "basicPassword": "",
+            "awsAccessKey": "",
+            "awsSecretKey": "",
+            "awsRegion": "us-east-1",
+            "awsService": "execute-api",
+            "awsSessionToken": "",
+            "jwtSecret": "",
+            "jwtAlgorithm": "hs256",
+            "jwtPayload": "{}",
+            "jwtHeaderPrefix": "Bearer",
+            "oauth2GrantType": "clientCredentials",
+            "oauth2AccessTokenUrl": "",
+            "oauth2AuthorizationUrl": "",
+            "oauth2RedirectUri": "",
+            "oauth2ClientId": "",
+            "oauth2ClientSecret": "",
+            "oauth2ClientAuthentication": "basicHeader",
+            "oauth2Scope": "",
+            "oauth2Username": "",
+            "oauth2Password": "",
+            "oauth2Audience": "",
+            "oauth2AccessToken": "",
+            "oauth2RefreshToken": "",
+            "oauth2TokenExpiry": null
           },
           "scripts": {
             "assertions": [
@@ -280,7 +393,36 @@
             "graphqlVariables": "{}"
           },
           "auth": {
-            "type": "inherit"
+            "type": "inherit",
+            "apiKeyName": "",
+            "apiKeyValue": "",
+            "apiKeyLocation": "header",
+            "bearerToken": "",
+            "basicUsername": "",
+            "basicPassword": "",
+            "awsAccessKey": "",
+            "awsSecretKey": "",
+            "awsRegion": "us-east-1",
+            "awsService": "execute-api",
+            "awsSessionToken": "",
+            "jwtSecret": "",
+            "jwtAlgorithm": "hs256",
+            "jwtPayload": "{}",
+            "jwtHeaderPrefix": "Bearer",
+            "oauth2GrantType": "clientCredentials",
+            "oauth2AccessTokenUrl": "",
+            "oauth2AuthorizationUrl": "",
+            "oauth2RedirectUri": "",
+            "oauth2ClientId": "",
+            "oauth2ClientSecret": "",
+            "oauth2ClientAuthentication": "basicHeader",
+            "oauth2Scope": "",
+            "oauth2Username": "",
+            "oauth2Password": "",
+            "oauth2Audience": "",
+            "oauth2AccessToken": "",
+            "oauth2RefreshToken": "",
+            "oauth2TokenExpiry": null
           },
           "scripts": {
             "assertions": [
@@ -309,8 +451,8 @@
           "description": "The job list screen. Optional filters are present but **disabled** — tick a row to use it.\n\n- `query` free-text search · `stage_id` / `project_id` filter · `sort_by` + `order` (`asc`|`desc`)\n- Any field's *technical name* can be used as a filter key, e.g. `bista_fixed_account_number`, `bista_fixed_location_address`, `tech_employee_id`.\n\nResponse: `{ status, data: [ job… ] }`. Each job has `fixed_fields`, `dynamic_fields` and an `is_revoked` flag (revoked jobs must be deleted from a local cache).\n\n**Source:** `FlowPros-MobileApp/lib/features/job/data/repositories/job_repository_impl.dart` → `JobRepositoryImpl.syncJobsPaginated`",
           "tags": [
             "jobs",
-            "v2",
-            "sync"
+            "sync",
+            "v2"
           ],
           "method": "get",
           "url": "{{baseUrl}}/api/v2/task_details_list",
@@ -373,7 +515,36 @@
             "graphqlVariables": "{}"
           },
           "auth": {
-            "type": "inherit"
+            "type": "inherit",
+            "apiKeyName": "",
+            "apiKeyValue": "",
+            "apiKeyLocation": "header",
+            "bearerToken": "",
+            "basicUsername": "",
+            "basicPassword": "",
+            "awsAccessKey": "",
+            "awsSecretKey": "",
+            "awsRegion": "us-east-1",
+            "awsService": "execute-api",
+            "awsSessionToken": "",
+            "jwtSecret": "",
+            "jwtAlgorithm": "hs256",
+            "jwtPayload": "{}",
+            "jwtHeaderPrefix": "Bearer",
+            "oauth2GrantType": "clientCredentials",
+            "oauth2AccessTokenUrl": "",
+            "oauth2AuthorizationUrl": "",
+            "oauth2RedirectUri": "",
+            "oauth2ClientId": "",
+            "oauth2ClientSecret": "",
+            "oauth2ClientAuthentication": "basicHeader",
+            "oauth2Scope": "",
+            "oauth2Username": "",
+            "oauth2Password": "",
+            "oauth2Audience": "",
+            "oauth2AccessToken": "",
+            "oauth2RefreshToken": "",
+            "oauth2TokenExpiry": null
           },
           "scripts": {
             "assertions": [
@@ -402,8 +573,8 @@
           "description": "Delta sync: only jobs changed after `last_sync_time` (epoch **seconds**). Use `{{lastSyncTime}}` = `0` for a full download.\n\nResponse: `{ status, data: [ job… ] }`. Each job has `fixed_fields`, `dynamic_fields` and an `is_revoked` flag (revoked jobs must be deleted from a local cache).\n\n**Source:** `FlowPros-MobileApp/lib/features/job/data/datasources/job_api_client.dart` → `JobApiClient.fetchJobsPage`",
           "tags": [
             "jobs",
-            "v2",
-            "sync"
+            "sync",
+            "v2"
           ],
           "method": "get",
           "url": "{{baseUrl}}/api/v2/task_details_list",
@@ -441,7 +612,36 @@
             "graphqlVariables": "{}"
           },
           "auth": {
-            "type": "inherit"
+            "type": "inherit",
+            "apiKeyName": "",
+            "apiKeyValue": "",
+            "apiKeyLocation": "header",
+            "bearerToken": "",
+            "basicUsername": "",
+            "basicPassword": "",
+            "awsAccessKey": "",
+            "awsSecretKey": "",
+            "awsRegion": "us-east-1",
+            "awsService": "execute-api",
+            "awsSessionToken": "",
+            "jwtSecret": "",
+            "jwtAlgorithm": "hs256",
+            "jwtPayload": "{}",
+            "jwtHeaderPrefix": "Bearer",
+            "oauth2GrantType": "clientCredentials",
+            "oauth2AccessTokenUrl": "",
+            "oauth2AuthorizationUrl": "",
+            "oauth2RedirectUri": "",
+            "oauth2ClientId": "",
+            "oauth2ClientSecret": "",
+            "oauth2ClientAuthentication": "basicHeader",
+            "oauth2Scope": "",
+            "oauth2Username": "",
+            "oauth2Password": "",
+            "oauth2Audience": "",
+            "oauth2AccessToken": "",
+            "oauth2RefreshToken": "",
+            "oauth2TokenExpiry": null
           },
           "scripts": {
             "assertions": [
@@ -503,7 +703,36 @@
             "graphqlVariables": "{}"
           },
           "auth": {
-            "type": "inherit"
+            "type": "inherit",
+            "apiKeyName": "",
+            "apiKeyValue": "",
+            "apiKeyLocation": "header",
+            "bearerToken": "",
+            "basicUsername": "",
+            "basicPassword": "",
+            "awsAccessKey": "",
+            "awsSecretKey": "",
+            "awsRegion": "us-east-1",
+            "awsService": "execute-api",
+            "awsSessionToken": "",
+            "jwtSecret": "",
+            "jwtAlgorithm": "hs256",
+            "jwtPayload": "{}",
+            "jwtHeaderPrefix": "Bearer",
+            "oauth2GrantType": "clientCredentials",
+            "oauth2AccessTokenUrl": "",
+            "oauth2AuthorizationUrl": "",
+            "oauth2RedirectUri": "",
+            "oauth2ClientId": "",
+            "oauth2ClientSecret": "",
+            "oauth2ClientAuthentication": "basicHeader",
+            "oauth2Scope": "",
+            "oauth2Username": "",
+            "oauth2Password": "",
+            "oauth2Audience": "",
+            "oauth2AccessToken": "",
+            "oauth2RefreshToken": "",
+            "oauth2TokenExpiry": null
           },
           "scripts": {
             "assertions": [
@@ -560,7 +789,36 @@
             "graphqlVariables": "{}"
           },
           "auth": {
-            "type": "inherit"
+            "type": "inherit",
+            "apiKeyName": "",
+            "apiKeyValue": "",
+            "apiKeyLocation": "header",
+            "bearerToken": "",
+            "basicUsername": "",
+            "basicPassword": "",
+            "awsAccessKey": "",
+            "awsSecretKey": "",
+            "awsRegion": "us-east-1",
+            "awsService": "execute-api",
+            "awsSessionToken": "",
+            "jwtSecret": "",
+            "jwtAlgorithm": "hs256",
+            "jwtPayload": "{}",
+            "jwtHeaderPrefix": "Bearer",
+            "oauth2GrantType": "clientCredentials",
+            "oauth2AccessTokenUrl": "",
+            "oauth2AuthorizationUrl": "",
+            "oauth2RedirectUri": "",
+            "oauth2ClientId": "",
+            "oauth2ClientSecret": "",
+            "oauth2ClientAuthentication": "basicHeader",
+            "oauth2Scope": "",
+            "oauth2Username": "",
+            "oauth2Password": "",
+            "oauth2Audience": "",
+            "oauth2AccessToken": "",
+            "oauth2RefreshToken": "",
+            "oauth2TokenExpiry": null
           },
           "scripts": {
             "assertions": [
@@ -607,7 +865,36 @@
             "graphqlVariables": "{}"
           },
           "auth": {
-            "type": "inherit"
+            "type": "inherit",
+            "apiKeyName": "",
+            "apiKeyValue": "",
+            "apiKeyLocation": "header",
+            "bearerToken": "",
+            "basicUsername": "",
+            "basicPassword": "",
+            "awsAccessKey": "",
+            "awsSecretKey": "",
+            "awsRegion": "us-east-1",
+            "awsService": "execute-api",
+            "awsSessionToken": "",
+            "jwtSecret": "",
+            "jwtAlgorithm": "hs256",
+            "jwtPayload": "{}",
+            "jwtHeaderPrefix": "Bearer",
+            "oauth2GrantType": "clientCredentials",
+            "oauth2AccessTokenUrl": "",
+            "oauth2AuthorizationUrl": "",
+            "oauth2RedirectUri": "",
+            "oauth2ClientId": "",
+            "oauth2ClientSecret": "",
+            "oauth2ClientAuthentication": "basicHeader",
+            "oauth2Scope": "",
+            "oauth2Username": "",
+            "oauth2Password": "",
+            "oauth2Audience": "",
+            "oauth2AccessToken": "",
+            "oauth2RefreshToken": "",
+            "oauth2TokenExpiry": null
           },
           "scripts": {
             "assertions": [
@@ -649,7 +936,36 @@
             "graphqlVariables": "{}"
           },
           "auth": {
-            "type": "inherit"
+            "type": "inherit",
+            "apiKeyName": "",
+            "apiKeyValue": "",
+            "apiKeyLocation": "header",
+            "bearerToken": "",
+            "basicUsername": "",
+            "basicPassword": "",
+            "awsAccessKey": "",
+            "awsSecretKey": "",
+            "awsRegion": "us-east-1",
+            "awsService": "execute-api",
+            "awsSessionToken": "",
+            "jwtSecret": "",
+            "jwtAlgorithm": "hs256",
+            "jwtPayload": "{}",
+            "jwtHeaderPrefix": "Bearer",
+            "oauth2GrantType": "clientCredentials",
+            "oauth2AccessTokenUrl": "",
+            "oauth2AuthorizationUrl": "",
+            "oauth2RedirectUri": "",
+            "oauth2ClientId": "",
+            "oauth2ClientSecret": "",
+            "oauth2ClientAuthentication": "basicHeader",
+            "oauth2Scope": "",
+            "oauth2Username": "",
+            "oauth2Password": "",
+            "oauth2Audience": "",
+            "oauth2AccessToken": "",
+            "oauth2RefreshToken": "",
+            "oauth2TokenExpiry": null
           },
           "scripts": {
             "assertions": [
@@ -691,7 +1007,36 @@
             "graphqlVariables": "{}"
           },
           "auth": {
-            "type": "inherit"
+            "type": "inherit",
+            "apiKeyName": "",
+            "apiKeyValue": "",
+            "apiKeyLocation": "header",
+            "bearerToken": "",
+            "basicUsername": "",
+            "basicPassword": "",
+            "awsAccessKey": "",
+            "awsSecretKey": "",
+            "awsRegion": "us-east-1",
+            "awsService": "execute-api",
+            "awsSessionToken": "",
+            "jwtSecret": "",
+            "jwtAlgorithm": "hs256",
+            "jwtPayload": "{}",
+            "jwtHeaderPrefix": "Bearer",
+            "oauth2GrantType": "clientCredentials",
+            "oauth2AccessTokenUrl": "",
+            "oauth2AuthorizationUrl": "",
+            "oauth2RedirectUri": "",
+            "oauth2ClientId": "",
+            "oauth2ClientSecret": "",
+            "oauth2ClientAuthentication": "basicHeader",
+            "oauth2Scope": "",
+            "oauth2Username": "",
+            "oauth2Password": "",
+            "oauth2Audience": "",
+            "oauth2AccessToken": "",
+            "oauth2RefreshToken": "",
+            "oauth2TokenExpiry": null
           },
           "scripts": {
             "assertions": [
@@ -709,10 +1054,10 @@
           "name": "Delete job",
           "description": "Deletes (or soft-deletes) a job. **Destructive** — double-check `{{jobId}}` and the active environment.\n\n**Source:** `FlowPros-MobileApp/lib/features/job/data/datasources/job_api_client.dart` → `JobApiClient.deleteJob`",
           "tags": [
+            "destructive",
             "jobs",
             "v1",
-            "write",
-            "destructive"
+            "write"
           ],
           "method": "post",
           "url": "{{baseUrl}}/api/v1/delete_task",
@@ -734,7 +1079,36 @@
             "graphqlVariables": "{}"
           },
           "auth": {
-            "type": "inherit"
+            "type": "inherit",
+            "apiKeyName": "",
+            "apiKeyValue": "",
+            "apiKeyLocation": "header",
+            "bearerToken": "",
+            "basicUsername": "",
+            "basicPassword": "",
+            "awsAccessKey": "",
+            "awsSecretKey": "",
+            "awsRegion": "us-east-1",
+            "awsService": "execute-api",
+            "awsSessionToken": "",
+            "jwtSecret": "",
+            "jwtAlgorithm": "hs256",
+            "jwtPayload": "{}",
+            "jwtHeaderPrefix": "Bearer",
+            "oauth2GrantType": "clientCredentials",
+            "oauth2AccessTokenUrl": "",
+            "oauth2AuthorizationUrl": "",
+            "oauth2RedirectUri": "",
+            "oauth2ClientId": "",
+            "oauth2ClientSecret": "",
+            "oauth2ClientAuthentication": "basicHeader",
+            "oauth2Scope": "",
+            "oauth2Username": "",
+            "oauth2Password": "",
+            "oauth2Audience": "",
+            "oauth2AccessToken": "",
+            "oauth2RefreshToken": "",
+            "oauth2TokenExpiry": null
           },
           "scripts": {
             "assertions": [
@@ -776,7 +1150,36 @@
             "graphqlVariables": "{}"
           },
           "auth": {
-            "type": "inherit"
+            "type": "inherit",
+            "apiKeyName": "",
+            "apiKeyValue": "",
+            "apiKeyLocation": "header",
+            "bearerToken": "",
+            "basicUsername": "",
+            "basicPassword": "",
+            "awsAccessKey": "",
+            "awsSecretKey": "",
+            "awsRegion": "us-east-1",
+            "awsService": "execute-api",
+            "awsSessionToken": "",
+            "jwtSecret": "",
+            "jwtAlgorithm": "hs256",
+            "jwtPayload": "{}",
+            "jwtHeaderPrefix": "Bearer",
+            "oauth2GrantType": "clientCredentials",
+            "oauth2AccessTokenUrl": "",
+            "oauth2AuthorizationUrl": "",
+            "oauth2RedirectUri": "",
+            "oauth2ClientId": "",
+            "oauth2ClientSecret": "",
+            "oauth2ClientAuthentication": "basicHeader",
+            "oauth2Scope": "",
+            "oauth2Username": "",
+            "oauth2Password": "",
+            "oauth2Audience": "",
+            "oauth2AccessToken": "",
+            "oauth2RefreshToken": "",
+            "oauth2TokenExpiry": null
           },
           "scripts": {
             "assertions": [
@@ -794,10 +1197,10 @@
           "name": "Bulk update — select all (filter)",
           "description": "`is_select_all: true` ignores `job_ids` and applies to everything matching `filter` (the list filter that was active in the app). The exact keys of `filter` are decided by the screen; `project_id` below is an example.\n\n**Source:** `FlowPros-MobileApp/lib/features/job/data/datasources/job_api_client.dart` → `JobApiClient.bulkUpdate(isSelectAll)`",
           "tags": [
+            "destructive",
             "jobs",
             "v1",
-            "write",
-            "destructive"
+            "write"
           ],
           "method": "post",
           "url": "{{baseUrl}}/api/v1/bulk_job_update",
@@ -819,7 +1222,36 @@
             "graphqlVariables": "{}"
           },
           "auth": {
-            "type": "inherit"
+            "type": "inherit",
+            "apiKeyName": "",
+            "apiKeyValue": "",
+            "apiKeyLocation": "header",
+            "bearerToken": "",
+            "basicUsername": "",
+            "basicPassword": "",
+            "awsAccessKey": "",
+            "awsSecretKey": "",
+            "awsRegion": "us-east-1",
+            "awsService": "execute-api",
+            "awsSessionToken": "",
+            "jwtSecret": "",
+            "jwtAlgorithm": "hs256",
+            "jwtPayload": "{}",
+            "jwtHeaderPrefix": "Bearer",
+            "oauth2GrantType": "clientCredentials",
+            "oauth2AccessTokenUrl": "",
+            "oauth2AuthorizationUrl": "",
+            "oauth2RedirectUri": "",
+            "oauth2ClientId": "",
+            "oauth2ClientSecret": "",
+            "oauth2ClientAuthentication": "basicHeader",
+            "oauth2Scope": "",
+            "oauth2Username": "",
+            "oauth2Password": "",
+            "oauth2Audience": "",
+            "oauth2AccessToken": "",
+            "oauth2RefreshToken": "",
+            "oauth2TokenExpiry": null
           },
           "scripts": {
             "assertions": [
@@ -838,9 +1270,9 @@
           "description": "`multipart/form-data` with the text parts below **plus a file part `image_file`** (the photo/signature).\n\n> PostPilot's form-data editor handles text parts only, so attach `image_file` with cURL instead:\n> `curl -X POST \"{{baseUrl}}/api/v1/upload_image\" -H \"access-token: <token>\" -F job_id=<id> -F field_name=<technical_name> -F file_name=photo.jpg -F image_file=@photo.jpg`\n\n**Source:** `FlowPros-MobileApp/lib/features/job/data/datasources/job_api_client.dart` → `JobApiClient.uploadImage`",
           "tags": [
             "jobs",
+            "upload",
             "v1",
-            "write",
-            "upload"
+            "write"
           ],
           "method": "post",
           "url": "{{baseUrl}}/api/v1/upload_image",
@@ -878,7 +1310,36 @@
             "graphqlVariables": "{}"
           },
           "auth": {
-            "type": "inherit"
+            "type": "inherit",
+            "apiKeyName": "",
+            "apiKeyValue": "",
+            "apiKeyLocation": "header",
+            "bearerToken": "",
+            "basicUsername": "",
+            "basicPassword": "",
+            "awsAccessKey": "",
+            "awsSecretKey": "",
+            "awsRegion": "us-east-1",
+            "awsService": "execute-api",
+            "awsSessionToken": "",
+            "jwtSecret": "",
+            "jwtAlgorithm": "hs256",
+            "jwtPayload": "{}",
+            "jwtHeaderPrefix": "Bearer",
+            "oauth2GrantType": "clientCredentials",
+            "oauth2AccessTokenUrl": "",
+            "oauth2AuthorizationUrl": "",
+            "oauth2RedirectUri": "",
+            "oauth2ClientId": "",
+            "oauth2ClientSecret": "",
+            "oauth2ClientAuthentication": "basicHeader",
+            "oauth2Scope": "",
+            "oauth2Username": "",
+            "oauth2Password": "",
+            "oauth2Audience": "",
+            "oauth2AccessToken": "",
+            "oauth2RefreshToken": "",
+            "oauth2TokenExpiry": null
           }
         },
         {
@@ -887,8 +1348,8 @@
           "description": "Projects the user can see. Response also carries `revoked_ids` (projects to delete from the local cache).\n\n**Source:** `FlowPros-MobileApp/lib/features/job/data/repositories/project_repository_impl.dart` → `ProjectRepositoryImpl.syncProjects`",
           "tags": [
             "projects",
-            "v2",
-            "sync"
+            "sync",
+            "v2"
           ],
           "method": "get",
           "url": "{{baseUrl}}/api/v2/project_details",
@@ -921,7 +1382,36 @@
             "graphqlVariables": "{}"
           },
           "auth": {
-            "type": "inherit"
+            "type": "inherit",
+            "apiKeyName": "",
+            "apiKeyValue": "",
+            "apiKeyLocation": "header",
+            "bearerToken": "",
+            "basicUsername": "",
+            "basicPassword": "",
+            "awsAccessKey": "",
+            "awsSecretKey": "",
+            "awsRegion": "us-east-1",
+            "awsService": "execute-api",
+            "awsSessionToken": "",
+            "jwtSecret": "",
+            "jwtAlgorithm": "hs256",
+            "jwtPayload": "{}",
+            "jwtHeaderPrefix": "Bearer",
+            "oauth2GrantType": "clientCredentials",
+            "oauth2AccessTokenUrl": "",
+            "oauth2AuthorizationUrl": "",
+            "oauth2RedirectUri": "",
+            "oauth2ClientId": "",
+            "oauth2ClientSecret": "",
+            "oauth2ClientAuthentication": "basicHeader",
+            "oauth2Scope": "",
+            "oauth2Username": "",
+            "oauth2Password": "",
+            "oauth2Audience": "",
+            "oauth2AccessToken": "",
+            "oauth2RefreshToken": "",
+            "oauth2TokenExpiry": null
           },
           "scripts": {
             "assertions": [
@@ -945,8 +1435,8 @@
           "description": "Workflow stages (Odoo `project.task.type`) with colour/icon. Entries with `is_revoked` must be dropped.\n\n**Source:** `FlowPros-MobileApp/lib/features/job/data/repositories/pm_dashboard_repository_impl.dart` → `PmDashboardRepositoryImpl.getStageDetails`",
           "tags": [
             "stages",
-            "v2",
-            "sync"
+            "sync",
+            "v2"
           ],
           "method": "get",
           "url": "{{baseUrl}}/api/v2/task_stage_details",
@@ -979,7 +1469,36 @@
             "graphqlVariables": "{}"
           },
           "auth": {
-            "type": "inherit"
+            "type": "inherit",
+            "apiKeyName": "",
+            "apiKeyValue": "",
+            "apiKeyLocation": "header",
+            "bearerToken": "",
+            "basicUsername": "",
+            "basicPassword": "",
+            "awsAccessKey": "",
+            "awsSecretKey": "",
+            "awsRegion": "us-east-1",
+            "awsService": "execute-api",
+            "awsSessionToken": "",
+            "jwtSecret": "",
+            "jwtAlgorithm": "hs256",
+            "jwtPayload": "{}",
+            "jwtHeaderPrefix": "Bearer",
+            "oauth2GrantType": "clientCredentials",
+            "oauth2AccessTokenUrl": "",
+            "oauth2AuthorizationUrl": "",
+            "oauth2RedirectUri": "",
+            "oauth2ClientId": "",
+            "oauth2ClientSecret": "",
+            "oauth2ClientAuthentication": "basicHeader",
+            "oauth2Scope": "",
+            "oauth2Username": "",
+            "oauth2Password": "",
+            "oauth2Audience": "",
+            "oauth2AccessToken": "",
+            "oauth2RefreshToken": "",
+            "oauth2TokenExpiry": null
           },
           "scripts": {
             "assertions": [
@@ -1002,9 +1521,9 @@
           "name": "Stage-wise job count",
           "description": "Dashboard counters per stage. Send **either** `project_id` **or** `last_sync_time`. `204 No Content` means \"nothing to count\" and is a normal answer.\n\n**Source:** `FlowPros-MobileApp/lib/features/job/data/repositories/pm_dashboard_repository_impl.dart` → `PmDashboardRepositoryImpl.syncStageWiseJobCountV2`",
           "tags": [
+            "dashboard",
             "stages",
-            "v2",
-            "dashboard"
+            "v2"
           ],
           "method": "get",
           "url": "{{baseUrl}}/api/v2/stage_wise_job_count",
@@ -1037,7 +1556,36 @@
             "graphqlVariables": "{}"
           },
           "auth": {
-            "type": "inherit"
+            "type": "inherit",
+            "apiKeyName": "",
+            "apiKeyValue": "",
+            "apiKeyLocation": "header",
+            "bearerToken": "",
+            "basicUsername": "",
+            "basicPassword": "",
+            "awsAccessKey": "",
+            "awsSecretKey": "",
+            "awsRegion": "us-east-1",
+            "awsService": "execute-api",
+            "awsSessionToken": "",
+            "jwtSecret": "",
+            "jwtAlgorithm": "hs256",
+            "jwtPayload": "{}",
+            "jwtHeaderPrefix": "Bearer",
+            "oauth2GrantType": "clientCredentials",
+            "oauth2AccessTokenUrl": "",
+            "oauth2AuthorizationUrl": "",
+            "oauth2RedirectUri": "",
+            "oauth2ClientId": "",
+            "oauth2ClientSecret": "",
+            "oauth2ClientAuthentication": "basicHeader",
+            "oauth2Scope": "",
+            "oauth2Username": "",
+            "oauth2Password": "",
+            "oauth2Audience": "",
+            "oauth2AccessToken": "",
+            "oauth2RefreshToken": "",
+            "oauth2TokenExpiry": null
           },
           "scripts": {
             "assertions": [
@@ -1114,7 +1662,36 @@
             "graphqlVariables": "{}"
           },
           "auth": {
-            "type": "inherit"
+            "type": "inherit",
+            "apiKeyName": "",
+            "apiKeyValue": "",
+            "apiKeyLocation": "header",
+            "bearerToken": "",
+            "basicUsername": "",
+            "basicPassword": "",
+            "awsAccessKey": "",
+            "awsSecretKey": "",
+            "awsRegion": "us-east-1",
+            "awsService": "execute-api",
+            "awsSessionToken": "",
+            "jwtSecret": "",
+            "jwtAlgorithm": "hs256",
+            "jwtPayload": "{}",
+            "jwtHeaderPrefix": "Bearer",
+            "oauth2GrantType": "clientCredentials",
+            "oauth2AccessTokenUrl": "",
+            "oauth2AuthorizationUrl": "",
+            "oauth2RedirectUri": "",
+            "oauth2ClientId": "",
+            "oauth2ClientSecret": "",
+            "oauth2ClientAuthentication": "basicHeader",
+            "oauth2Scope": "",
+            "oauth2Username": "",
+            "oauth2Password": "",
+            "oauth2Audience": "",
+            "oauth2AccessToken": "",
+            "oauth2RefreshToken": "",
+            "oauth2TokenExpiry": null
           },
           "scripts": {
             "assertions": [
@@ -1133,8 +1710,8 @@
           "description": "Defines the dynamic form: groups and whether each is required / read-only / visible. Send `job_id` (per-job attributes) **or** `project_id` **or** `last_sync_time`.\n\n**Source:** `FlowPros-MobileApp/lib/features/job/data/repositories/pull/job_field_group_pull_sync_repository_impl.dart` → `JobFieldGroupPullSyncRepositoryImpl`",
           "tags": [
             "fields",
-            "v1",
-            "sync"
+            "sync",
+            "v1"
           ],
           "method": "get",
           "url": "{{baseUrl}}/api/v1/field_group_list",
@@ -1172,7 +1749,36 @@
             "graphqlVariables": "{}"
           },
           "auth": {
-            "type": "inherit"
+            "type": "inherit",
+            "apiKeyName": "",
+            "apiKeyValue": "",
+            "apiKeyLocation": "header",
+            "bearerToken": "",
+            "basicUsername": "",
+            "basicPassword": "",
+            "awsAccessKey": "",
+            "awsSecretKey": "",
+            "awsRegion": "us-east-1",
+            "awsService": "execute-api",
+            "awsSessionToken": "",
+            "jwtSecret": "",
+            "jwtAlgorithm": "hs256",
+            "jwtPayload": "{}",
+            "jwtHeaderPrefix": "Bearer",
+            "oauth2GrantType": "clientCredentials",
+            "oauth2AccessTokenUrl": "",
+            "oauth2AuthorizationUrl": "",
+            "oauth2RedirectUri": "",
+            "oauth2ClientId": "",
+            "oauth2ClientSecret": "",
+            "oauth2ClientAuthentication": "basicHeader",
+            "oauth2Scope": "",
+            "oauth2Username": "",
+            "oauth2Password": "",
+            "oauth2Audience": "",
+            "oauth2AccessToken": "",
+            "oauth2RefreshToken": "",
+            "oauth2TokenExpiry": null
           },
           "scripts": {
             "assertions": [
@@ -1196,8 +1802,8 @@
           "description": "Offline option lists for relational (dropdown) fields, paged. `field_model` narrows to one Odoo model; `last_sync_timestamp` (epoch seconds) makes it incremental.\n\n**Source:** `FlowPros-MobileApp/lib/features/job/data/repositories/model_pull_sync_repository_impl.dart` → `ModelPullSyncRepositoryImpl.sync`",
           "tags": [
             "fields",
-            "v2",
-            "sync"
+            "sync",
+            "v2"
           ],
           "method": "get",
           "url": "{{baseUrl}}/api/v2/get_relational_field_master_data",
@@ -1240,7 +1846,36 @@
             "graphqlVariables": "{}"
           },
           "auth": {
-            "type": "inherit"
+            "type": "inherit",
+            "apiKeyName": "",
+            "apiKeyValue": "",
+            "apiKeyLocation": "header",
+            "bearerToken": "",
+            "basicUsername": "",
+            "basicPassword": "",
+            "awsAccessKey": "",
+            "awsSecretKey": "",
+            "awsRegion": "us-east-1",
+            "awsService": "execute-api",
+            "awsSessionToken": "",
+            "jwtSecret": "",
+            "jwtAlgorithm": "hs256",
+            "jwtPayload": "{}",
+            "jwtHeaderPrefix": "Bearer",
+            "oauth2GrantType": "clientCredentials",
+            "oauth2AccessTokenUrl": "",
+            "oauth2AuthorizationUrl": "",
+            "oauth2RedirectUri": "",
+            "oauth2ClientId": "",
+            "oauth2ClientSecret": "",
+            "oauth2ClientAuthentication": "basicHeader",
+            "oauth2Scope": "",
+            "oauth2Username": "",
+            "oauth2Password": "",
+            "oauth2Audience": "",
+            "oauth2AccessToken": "",
+            "oauth2RefreshToken": "",
+            "oauth2TokenExpiry": null
           },
           "scripts": {
             "assertions": [
@@ -1297,7 +1932,36 @@
             "graphqlVariables": "{}"
           },
           "auth": {
-            "type": "inherit"
+            "type": "inherit",
+            "apiKeyName": "",
+            "apiKeyValue": "",
+            "apiKeyLocation": "header",
+            "bearerToken": "",
+            "basicUsername": "",
+            "basicPassword": "",
+            "awsAccessKey": "",
+            "awsSecretKey": "",
+            "awsRegion": "us-east-1",
+            "awsService": "execute-api",
+            "awsSessionToken": "",
+            "jwtSecret": "",
+            "jwtAlgorithm": "hs256",
+            "jwtPayload": "{}",
+            "jwtHeaderPrefix": "Bearer",
+            "oauth2GrantType": "clientCredentials",
+            "oauth2AccessTokenUrl": "",
+            "oauth2AuthorizationUrl": "",
+            "oauth2RedirectUri": "",
+            "oauth2ClientId": "",
+            "oauth2ClientSecret": "",
+            "oauth2ClientAuthentication": "basicHeader",
+            "oauth2Scope": "",
+            "oauth2Username": "",
+            "oauth2Password": "",
+            "oauth2Audience": "",
+            "oauth2AccessToken": "",
+            "oauth2RefreshToken": "",
+            "oauth2TokenExpiry": null
           },
           "scripts": {
             "assertions": [
@@ -1348,7 +2012,36 @@
             "graphqlVariables": "{}"
           },
           "auth": {
-            "type": "none"
+            "type": "none",
+            "apiKeyName": "",
+            "apiKeyValue": "",
+            "apiKeyLocation": "header",
+            "bearerToken": "",
+            "basicUsername": "",
+            "basicPassword": "",
+            "awsAccessKey": "",
+            "awsSecretKey": "",
+            "awsRegion": "us-east-1",
+            "awsService": "execute-api",
+            "awsSessionToken": "",
+            "jwtSecret": "",
+            "jwtAlgorithm": "hs256",
+            "jwtPayload": "{}",
+            "jwtHeaderPrefix": "Bearer",
+            "oauth2GrantType": "clientCredentials",
+            "oauth2AccessTokenUrl": "",
+            "oauth2AuthorizationUrl": "",
+            "oauth2RedirectUri": "",
+            "oauth2ClientId": "",
+            "oauth2ClientSecret": "",
+            "oauth2ClientAuthentication": "basicHeader",
+            "oauth2Scope": "",
+            "oauth2Username": "",
+            "oauth2Password": "",
+            "oauth2Audience": "",
+            "oauth2AccessToken": "",
+            "oauth2RefreshToken": "",
+            "oauth2TokenExpiry": null
           },
           "scripts": {
             "assertions": [
@@ -1376,25 +2069,25 @@
         },
         {
           "key": "username",
-          "value": "",
+          "value": "manzurul",
           "secret": false,
           "enabled": true
         },
         {
           "key": "password",
-          "value": "",
+          "value": "1234",
           "secret": true,
           "enabled": true
         },
         {
           "key": "accessToken",
-          "value": "",
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYWNjZXNzXzI2IiwiZXhwIjoxNzkwOTI1NjgzfQ.CoSrzxYQXj29bPujhOp7kj80784oO3k35dFJRGs-voA",
           "secret": true,
           "enabled": true
         },
         {
           "key": "refreshToken",
-          "value": "",
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicmVmcmVzaF8yNiIsImV4cCI6MTc5MTg3MjA3MH0.0XjHRZGvOqx4d3JSIKtJKhIba5PKPK5KdvzRPaPIDqU",
           "secret": true,
           "enabled": true
         },
@@ -1534,14 +2227,14 @@
   ],
   "globals": [],
   "workplace": {
-    "id": "4dcfc6a2-d2b5-4b1b-a5fe-2384dd114e12",
-    "name": "FlowPros Mobile App",
-    "folderPath": "",
-    "gitRepoUrl": null,
+    "id": "def1a5ab-3c17-4ec2-92d0-eccc2596d634",
+    "name": "flowpros",
+    "folderPath": "C:\\Users\\Md Manzurul Islam\\OneDrive\\Documents\\PostPilot\\Workplaces\\flowpros",
+    "gitRepoUrl": "https://github.com/ManzurulIslamBista/flowpros-workspace",
     "gitBranch": "main",
     "gitToken": null,
-    "createdAt": "2026-10-02T06:00:33.000000Z",
-    "updatedAt": "2026-10-02T06:00:33.000000Z",
-    "lastSyncedAt": null
+    "createdAt": "2026-10-02T06:16:55.978053Z",
+    "updatedAt": "2026-10-02T06:16:55.978053Z",
+    "lastSyncedAt": "2026-10-02T06:16:57.318800Z"
   }
 }
