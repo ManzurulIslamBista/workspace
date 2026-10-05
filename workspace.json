@@ -3,7 +3,7 @@
   "version": 2,
   "sensitive": true,
   "notice": "This file contains secrets (variable values, tokens, passwords, API keys) in plain text. Keep it private.",
-  "exportedAt": "2026-10-02T13:39:08.281827Z",
+  "exportedAt": "2026-10-05T05:30:39.631010Z",
   "collections": [
     {
       "name": "FlowPros Mobile API",
@@ -2223,6 +2223,17 @@
           "enabled": true
         }
       ]
+    },
+    {
+      "name": "JSONPlaceholder",
+      "variables": [
+        {
+          "key": "baseUrl",
+          "value": "https://jsonplaceholder.typicode.com",
+          "secret": false,
+          "enabled": true
+        }
+      ]
     }
   ],
   "globals": [],
@@ -2234,7 +2245,7 @@
     "gitBranch": "main",
     "gitToken": null,
     "createdAt": "2026-10-02T08:18:28.999318Z",
-    "updatedAt": "2026-10-02T13:34:32.584255Z",
+    "updatedAt": "2026-10-02T13:39:11.178697Z",
     "lastSyncedAt": null,
     "lastSyncedSha": null
   }
