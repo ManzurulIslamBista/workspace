@@ -3,7 +3,7 @@
   "version": 2,
   "sensitive": true,
   "notice": "This file contains secrets (variable values, tokens, passwords, API keys) in plain text. Keep it private.",
-  "exportedAt": "2026-10-05T05:30:39.631010Z",
+  "exportedAt": "2026-10-07T06:25:59.994087Z",
   "collections": [
     {
       "name": "FlowPros Mobile API",
@@ -15,7 +15,7 @@
       "auth": {
         "type": "apiKey",
         "apiKeyName": "access-token",
-        "apiKeyValue": "",
+        "apiKeyValue": "{{accessToken}}",
         "apiKeyLocation": "header",
         "bearerToken": "",
         "basicUsername": "",
@@ -47,27 +47,30 @@
       "variables": [],
       "folders": [
         {
-          "id": 19,
+          "id": 39,
           "parentId": null,
           "name": "Auth & Session",
+          "order": 0,
           "description": "Login, token refresh, app settings and the signed-in user's profile. **Run `Login` first** — its extractors store `accessToken` / `refreshToken` in the active environment.",
           "tags": [
             "auth"
           ]
         },
         {
-          "id": 20,
+          "id": 40,
           "parentId": null,
           "name": "Jobs (tasks)",
+          "order": 1,
           "description": "Reading and changing jobs. In the backend a *job* is an Odoo `project.task`; `task_details_list` is the main sync endpoint, the others push local edits.",
           "tags": [
             "jobs"
           ]
         },
         {
-          "id": 21,
+          "id": 41,
           "parentId": null,
           "name": "Projects & Stages",
+          "order": 2,
           "description": "Project list, workflow stages and per-stage job counts used by the dashboard.",
           "tags": [
             "projects",
@@ -75,18 +78,20 @@
           ]
         },
         {
-          "id": 22,
+          "id": 42,
           "parentId": null,
           "name": "Map",
+          "order": 3,
           "description": "Job coordinates for the map screen.",
           "tags": [
             "map"
           ]
         },
         {
-          "id": 23,
+          "id": 43,
           "parentId": null,
           "name": "Field configuration & master data",
+          "order": 4,
           "description": "Dynamic form definition (field groups) and the option lists behind relational fields.",
           "tags": [
             "fields",
@@ -94,9 +99,10 @@
           ]
         },
         {
-          "id": 24,
+          "id": 44,
           "parentId": null,
           "name": "External (Google Routes)",
+          "order": 5,
           "description": "Not a FlowPros endpoint: the app calls Google directly to draw a route on the map. Needs `googleMapsApiKey` in the environment.",
           "tags": [
             "external"
@@ -105,8 +111,9 @@
       ],
       "requests": [
         {
-          "folderId": 19,
+          "folderId": 39,
           "name": "Login",
+          "order": 0,
           "description": "Exchanges username/password for an access + refresh token. `scope` is always `flow-pros`.\n\nResponse: `{ status, access_token, refresh_token, user_id }` (`user_id` may be an object with `id`, `user_type`, `name`).\n\nThe extractors below save the tokens into the **active environment**, so every other request authenticates automatically.\n\n**Source:** `FlowPros-MobileApp/lib/features/auth/data/repositories/authentication_repository_impl.dart` → `AuthenticationRepositoryImpl.login`",
           "tags": [
             "auth",
@@ -203,8 +210,9 @@
           }
         },
         {
-          "folderId": 19,
+          "folderId": 39,
           "name": "Refresh access token",
+          "order": 1,
           "description": "Called by the app automatically after a `401`. Returns a fresh `access_token` (top-level, or under `data`).\n\nStores it back into `accessToken`.\n\n**Source:** `FlowPros-MobileApp/lib/core/network/retry_policy/expired_token_retry_policy.dart` → `ExpiredTokenRetryPolicy._fetchNewAccessToken`",
           "tags": [
             "auth",
@@ -291,8 +299,9 @@
           }
         },
         {
-          "folderId": 19,
+          "folderId": 39,
           "name": "Get app settings",
+          "order": 2,
           "description": "Server-side app settings. The app reads the Firebase notification topic from `data.topic` (or `data.notification_topic` / `data.firebase_topic`).\n\n**Source:** `FlowPros-MobileApp/lib/features/auth/data/repositories/authentication_repository_impl.dart` → `AuthenticationRepositoryImpl.getNotificationTopic`",
           "tags": [
             "auth",
@@ -366,8 +375,9 @@
           }
         },
         {
-          "folderId": 19,
+          "folderId": 39,
           "name": "Get user profile",
+          "order": 3,
           "description": "Signed-in user. Response `data` holds `id`, `name`, `job_title`, `email`, `user_type` (`user_type` decides technician vs project-manager screens).\n\n**Source:** `FlowPros-MobileApp/lib/features/profile/data/repositories/profile_repository_impl.dart` → `ProfileRepositoryImpl.syncProfile`",
           "tags": [
             "auth",
@@ -446,8 +456,9 @@
           }
         },
         {
-          "folderId": 20,
+          "folderId": 40,
           "name": "List jobs (paginated)",
+          "order": 0,
           "description": "The job list screen. Optional filters are present but **disabled** — tick a row to use it.\n\n- `query` free-text search · `stage_id` / `project_id` filter · `sort_by` + `order` (`asc`|`desc`)\n- Any field's *technical name* can be used as a filter key, e.g. `bista_fixed_account_number`, `bista_fixed_location_address`, `tech_employee_id`.\n\nResponse: `{ status, data: [ job… ] }`. Each job has `fixed_fields`, `dynamic_fields` and an `is_revoked` flag (revoked jobs must be deleted from a local cache).\n\n**Source:** `FlowPros-MobileApp/lib/features/job/data/repositories/job_repository_impl.dart` → `JobRepositoryImpl.syncJobsPaginated`",
           "tags": [
             "jobs",
@@ -568,8 +579,9 @@
           }
         },
         {
-          "folderId": 20,
+          "folderId": 40,
           "name": "Jobs — incremental sync",
+          "order": 1,
           "description": "Delta sync: only jobs changed after `last_sync_time` (epoch **seconds**). Use `{{lastSyncTime}}` = `0` for a full download.\n\nResponse: `{ status, data: [ job… ] }`. Each job has `fixed_fields`, `dynamic_fields` and an `is_revoked` flag (revoked jobs must be deleted from a local cache).\n\n**Source:** `FlowPros-MobileApp/lib/features/job/data/datasources/job_api_client.dart` → `JobApiClient.fetchJobsPage`",
           "tags": [
             "jobs",
@@ -660,8 +672,9 @@
           }
         },
         {
-          "folderId": 20,
+          "folderId": 40,
           "name": "Get one job by id",
+          "order": 2,
           "description": "Fetches a single job through `job_id` (used after a push notification says a job changed).\n\nResponse: `{ status, data: [ job… ] }`. Each job has `fixed_fields`, `dynamic_fields` and an `is_revoked` flag (revoked jobs must be deleted from a local cache).\n\n**Source:** `FlowPros-MobileApp/lib/features/job/data/datasources/job_api_client.dart` → `JobApiClient.fetchJobsPage(entityId)`",
           "tags": [
             "jobs",
@@ -751,8 +764,9 @@
           }
         },
         {
-          "folderId": 20,
+          "folderId": 40,
           "name": "Jobs by date range",
+          "order": 3,
           "description": "`date_from` / `date_to` are epoch **seconds** (the app's defaults are `0` and `9999999999`).\n\n**Source:** `FlowPros-MobileApp/lib/features/job/data/repositories/job_repository_impl.dart` → `JobRepositoryImpl.syncJobs`",
           "tags": [
             "jobs",
@@ -837,8 +851,9 @@
           }
         },
         {
-          "folderId": 20,
+          "folderId": 40,
           "name": "Create job",
+          "order": 4,
           "description": "Creates a job. Success is `status: true` (or `result.success: true`).\n\n> ⚠️ The mobile app defines this call but **no screen sends it yet**, so the payload keys are not fixed in the client code. The body below is a *sample* built from the field technical names the app uses elsewhere — adjust it to your server contract.\n\n**Source:** `FlowPros-MobileApp/lib/features/job/data/datasources/job_api_client.dart` → `JobApiClient.createJob`",
           "tags": [
             "jobs",
@@ -908,8 +923,9 @@
           }
         },
         {
-          "folderId": 20,
+          "folderId": 40,
           "name": "Update job details",
+          "order": 5,
           "description": "Pushes a submitted job. `task_id` plus any field technical names to change. The submit flow sends `status: \"complete\"` and the captured coordinates; the other keys are the form's fields.\n\n**Source:** `FlowPros-MobileApp/lib/features/job/data/datasources/job_api_client.dart` → `JobApiClient.updateJob`",
           "tags": [
             "jobs",
@@ -979,8 +995,9 @@
           }
         },
         {
-          "folderId": 20,
+          "folderId": 40,
           "name": "Save task updates (draft)",
+          "order": 6,
           "description": "Saves a draft. Besides success, `data.field_updates` and `data.group_updates` tell the app which fields became required/read-only/visible after the change (conditional form logic).\n\n**Source:** `FlowPros-MobileApp/lib/features/job/data/repositories/job_action_repository_impl.dart` → `JobActionRepositoryImpl.save`",
           "tags": [
             "jobs",
@@ -1050,8 +1067,9 @@
           }
         },
         {
-          "folderId": 20,
+          "folderId": 40,
           "name": "Delete job",
+          "order": 7,
           "description": "Deletes (or soft-deletes) a job. **Destructive** — double-check `{{jobId}}` and the active environment.\n\n**Source:** `FlowPros-MobileApp/lib/features/job/data/datasources/job_api_client.dart` → `JobApiClient.deleteJob`",
           "tags": [
             "destructive",
@@ -1122,8 +1140,9 @@
           }
         },
         {
-          "folderId": 20,
+          "folderId": 40,
           "name": "Bulk update — selected jobs",
+          "order": 8,
           "description": "Applies the same field values to several jobs. With `is_select_all: false` the `job_ids` list is used; every other top-level key is a field technical name to set.\n\n**Source:** `FlowPros-MobileApp/lib/features/job/data/datasources/job_api_client.dart` → `JobApiClient.bulkUpdate`",
           "tags": [
             "jobs",
@@ -1193,8 +1212,9 @@
           }
         },
         {
-          "folderId": 20,
+          "folderId": 40,
           "name": "Bulk update — select all (filter)",
+          "order": 9,
           "description": "`is_select_all: true` ignores `job_ids` and applies to everything matching `filter` (the list filter that was active in the app). The exact keys of `filter` are decided by the screen; `project_id` below is an example.\n\n**Source:** `FlowPros-MobileApp/lib/features/job/data/datasources/job_api_client.dart` → `JobApiClient.bulkUpdate(isSelectAll)`",
           "tags": [
             "destructive",
@@ -1265,8 +1285,9 @@
           }
         },
         {
-          "folderId": 20,
+          "folderId": 40,
           "name": "Upload image / signature",
+          "order": 10,
           "description": "`multipart/form-data` with the text parts below **plus a file part `image_file`** (the photo/signature).\n\n> PostPilot's form-data editor handles text parts only, so attach `image_file` with cURL instead:\n> `curl -X POST \"{{baseUrl}}/api/v1/upload_image\" -H \"access-token: <token>\" -F job_id=<id> -F field_name=<technical_name> -F file_name=photo.jpg -F image_file=@photo.jpg`\n\n**Source:** `FlowPros-MobileApp/lib/features/job/data/datasources/job_api_client.dart` → `JobApiClient.uploadImage`",
           "tags": [
             "jobs",
@@ -1343,8 +1364,9 @@
           }
         },
         {
-          "folderId": 21,
+          "folderId": 41,
           "name": "Project details",
+          "order": 0,
           "description": "Projects the user can see. Response also carries `revoked_ids` (projects to delete from the local cache).\n\n**Source:** `FlowPros-MobileApp/lib/features/job/data/repositories/project_repository_impl.dart` → `ProjectRepositoryImpl.syncProjects`",
           "tags": [
             "projects",
@@ -1430,8 +1452,9 @@
           }
         },
         {
-          "folderId": 21,
+          "folderId": 41,
           "name": "Task stage details",
+          "order": 1,
           "description": "Workflow stages (Odoo `project.task.type`) with colour/icon. Entries with `is_revoked` must be dropped.\n\n**Source:** `FlowPros-MobileApp/lib/features/job/data/repositories/pm_dashboard_repository_impl.dart` → `PmDashboardRepositoryImpl.getStageDetails`",
           "tags": [
             "stages",
@@ -1517,8 +1540,9 @@
           }
         },
         {
-          "folderId": 21,
+          "folderId": 41,
           "name": "Stage-wise job count",
+          "order": 2,
           "description": "Dashboard counters per stage. Send **either** `project_id` **or** `last_sync_time`. `204 No Content` means \"nothing to count\" and is a normal answer.\n\n**Source:** `FlowPros-MobileApp/lib/features/job/data/repositories/pm_dashboard_repository_impl.dart` → `PmDashboardRepositoryImpl.syncStageWiseJobCountV2`",
           "tags": [
             "dashboard",
@@ -1599,8 +1623,9 @@
           }
         },
         {
-          "folderId": 22,
+          "folderId": 42,
           "name": "Job map list",
+          "order": 0,
           "description": "Lightweight list (`job id`, latitude, longitude, `stage_id`, address) for the map. `204` = no jobs. All filters are optional and disabled here.\n\n**Source:** `FlowPros-MobileApp/lib/features/job/data/repositories/pm_dashboard_repository_impl.dart` → `PmDashboardRepositoryImpl.getMapLocations`",
           "tags": [
             "map",
@@ -1705,8 +1730,9 @@
           }
         },
         {
-          "folderId": 23,
+          "folderId": 43,
           "name": "Field group list",
+          "order": 0,
           "description": "Defines the dynamic form: groups and whether each is required / read-only / visible. Send `job_id` (per-job attributes) **or** `project_id` **or** `last_sync_time`.\n\n**Source:** `FlowPros-MobileApp/lib/features/job/data/repositories/pull/job_field_group_pull_sync_repository_impl.dart` → `JobFieldGroupPullSyncRepositoryImpl`",
           "tags": [
             "fields",
@@ -1797,8 +1823,9 @@
           }
         },
         {
-          "folderId": 23,
+          "folderId": 43,
           "name": "Relational field master data (bulk)",
+          "order": 1,
           "description": "Offline option lists for relational (dropdown) fields, paged. `field_model` narrows to one Odoo model; `last_sync_timestamp` (epoch seconds) makes it incremental.\n\n**Source:** `FlowPros-MobileApp/lib/features/job/data/repositories/model_pull_sync_repository_impl.dart` → `ModelPullSyncRepositoryImpl.sync`",
           "tags": [
             "fields",
@@ -1894,8 +1921,9 @@
           }
         },
         {
-          "folderId": 23,
+          "folderId": 43,
           "name": "Model data (targeted)",
+          "order": 2,
           "description": "Options of **one** Odoo model, optionally scoped to a project (e.g. `project.task.type` for stages). The model names come from the field definitions, so use the value a field's `field_model` gives you.\n\n**Source:** `FlowPros-MobileApp/lib/features/job/data/repositories/model_pull_sync_repository_impl.dart` → `ModelPullSyncRepositoryImpl.syncModel`",
           "tags": [
             "fields",
@@ -1980,8 +2008,9 @@
           }
         },
         {
-          "folderId": 24,
+          "folderId": 44,
           "name": "Compute route (Google Routes API)",
+          "order": 0,
           "description": "Draws the driving route technician → job. Google, not FlowPros: authenticated by `X-Goog-Api-Key`, not `access-token`. The mobile app also sends `X-Android-Package` / `X-Android-Cert` / `X-Ios-Bundle-Identifier` when the key is restricted to the app; with an unrestricted key those are not needed.\n\nResponse: `routes[0].polyline.encodedPolyline`.\n\n**Source:** `FlowPros-MobileApp/lib/features/job/data/repositories/directions_repository_impl.dart` → `DirectionsRepositoryImpl.getDirections`",
           "tags": [
             "external",
@@ -2245,8 +2274,9 @@
     "gitBranch": "main",
     "gitToken": null,
     "createdAt": "2026-10-02T08:18:28.999318Z",
-    "updatedAt": "2026-10-02T13:39:11.178697Z",
+    "updatedAt": "2026-10-07T06:23:36.106409Z",
     "lastSyncedAt": null,
-    "lastSyncedSha": null
+    "lastSyncedSha": null,
+    "activeEnvironment": null
   }
 }
