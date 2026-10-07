@@ -3,7 +3,7 @@
   "version": 2,
   "sensitive": true,
   "notice": "This file contains secrets (variable values, tokens, passwords, API keys) in plain text. Keep it private.",
-  "exportedAt": "2026-10-07T12:08:57.600506Z",
+  "exportedAt": "2026-10-07T12:21:07.764220Z",
   "collections": [
     {
       "name": "FlowPros Mobile API",
@@ -2298,20 +2298,16 @@
           "enabled": true
         }
       ]
-    },
-    {
-      "name": "JSONPlaceholder",
-      "variables": [
-        {
-          "key": "baseUrl",
-          "value": "https://jsonplaceholder.typicode.com",
-          "secret": false,
-          "enabled": true
-        }
-      ]
     }
   ],
-  "globals": [],
+  "globals": [
+    {
+      "key": "fixed_fields",
+      "value": "{\"id\":3681,\"name\":\"202 S Front St Greenfield, TN  38230\",\"stage_id\":{\"type\":\"many2one\",\"model\":\"project.task.type\",\"data\":{\"id\":150,\"name\":\"Start\",\"stage_technical_name\":\"Start\"}},\"project_id\":{\"type\":\"many2one\",\"model\":\"project.project\",\"data\":{\"id\":60,\"name\":\"PJ00054 - Greenfield Water Meter Replacement (Faez Test - 01)\"}},\"bista_job_type_id\":{\"type\":\"many2one\",\"model\":\"task.job.type\",\"data\":{\"id\":2,\"name\":\"Water\"}},\"bista_fixed_location_address\":\"202 S Front St Greenfield, TN  38230\",\"create_date\":1787917719,\"write_date\":1789732612,\"bista_fixed_location_city\":\"\",\"bista_fixed_location_state_id\":{\"type\":\"many2one\",\"model\":\"res.country.state\",\"data\":{\"id\":51,\"name\":\"Tennessee (US)\"}},\"bista_fixed_location_zip\":\"38230\",\"bista_fixed_route\":\"\",\"bista_fixed_date_installed\":1789732612,\"bista_fixed_location_latitude\":36.1525889,\"bista_fixed_location_longitude\":-88.799585,\"bista_planned_date\":1789818780,\"bista_fixed_skipped_reason_type\":{\"type\":\"selection\",\"data\":null,\"selection_options\":[[\"locate\",\"locate\"],[\"valve will not shutoff\",\"valve will not shutoff\"],[\"wrong meter information\",\"wrong meter information\"],[\"customer refusal\",\"customer refusal\"],[\"water leak\",\"water leak\"],[\"meter box needs replaced\",\"meter box needs replaced\"],[\"other\",\"other\"]]},\"bista_fixed_skipped_note\":\"\",\"bista_fixed_skipped_reason_image\":\"api/v1/web/image/project.task/3681/bista_fixed_skipped_reason_image\",\"bista_fixed_job_sequence\":null,\"bista_account_segment_1\":\"00061\",\"bista_account_segment_2\":\"6080\",\"bista_account_segment_3\":\"001\",\"tech_employee_id\":{\"type\":\"many2one\",\"model\":\"hr.employee\",\"data\":{\"id\":30,\"name\":\"Tonmoy (Technician)\"}},\"bista_fixed_account_number\":\"0006-16080-001\",\"have_workflow\":true}",
+      "secret": false,
+      "enabled": true
+    }
+  ],
   "workplace": {
     "id": "447eee01-c962-4d37-9ae4-a9751699b546",
     "name": "flow",
@@ -2320,7 +2316,7 @@
     "gitBranch": "main",
     "gitToken": null,
     "createdAt": "2026-10-02T08:18:28.999318Z",
-    "updatedAt": "2026-10-07T06:26:03.384988Z",
+    "updatedAt": "2026-10-07T12:09:00.702709Z",
     "lastSyncedAt": null,
     "lastSyncedSha": null,
     "activeEnvironment": null
